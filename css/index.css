@@ -1,0 +1,185 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#2A52FF;
+    background-image:linear-gradient(top, #2A52FF 0%, #000000 51%);
+    background-image:-webkit-linear-gradient(top, #2A52FF 0%, #000000 51%);
+    background-image:-ms-linear-gradient(top, #2A52FF 0%, #000000 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #2A52FF),
+        color-stop(0.51, #000000)
+    );
+    background-attachment:fixed;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 70px;
+    height:100%;
+    
+}
+
+/* Portrait layout (default) */
+
+img.logo {
+	display:block; 
+	margin:0 auto;
+	margin-top : 55px;
+	margin-bottom : 55px;
+}
+
+div.navigation {
+	background-color : rgba(255, 255, 255, 0.24);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin : 4px;
+	border: 1px solid;
+	border-color : rgb(255,255,255);
+	padding: 4px;
+	text-decoration: none;
+	list-style-type : none;
+
+	}
+
+a :active {
+	color: rgb(125,125,175);
+}
+
+div.navigation  a {
+	
+	background-image:linear-gradient(top, #F8F8F8 0%, #D2D0FF 51%);
+    background-image:-webkit-linear-gradient(top, #F8F8F8 0%, #D2D0FF 51%);
+    background-image:-ms-linear-gradient(top, #F8F8F8 0%, #D2D0FF 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #F8F8F8),
+        color-stop(0.51, #D2D0FF)
+    );
+	
+	height : 145px;
+	margin : 5px;
+	border: 1px solid;
+	border-color : rgb(255,255,255);
+	padding: 2px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-align: center;
+	display:block;
+	vertical-align: middle;
+	color: rgb(25,25,75);
+	
+	text-shadow: 0.1em 0.1em 0.2em rgb(141, 141, 160);
+	text-decoration: none;
+}
+
+div.navigation a b {
+	position: relative;
+	top : 18px;
+}
+
+table{
+	border: 1px solid;
+	background-color : rgba(235, 231, 255, 0.75);
+	border-color : rgb(255,255,255);
+	margin : 5px;
+	padding: 8px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-align: center;
+	display:block;
+	vertical-align: middle;
+	font-size: 30px;
+}
+
+th, td
+{
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #ffffff;
+	padding: 15px;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+	
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}

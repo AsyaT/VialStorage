@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<main>
+		<category name="Блоки" id="1">
+			 <item name="Блоки 400*400*1700">
+				<tonnes>0.933</tonnes>
+				<pieces>2.000</pieces>
+			 </item>
+			<item name="Блоки 400*400*1800">
+				<tonnes>1.007</tonnes>
+				<pieces>2.000</pieces>
+			 </item>
+
+		 </category>
+		 <category name="Бой" id="2">
+			<item name="Бой графита">
+				<tonnes>25.180</tonnes>
+				<pieces></pieces>
+			 </item>
+			 <item name="Бой угольный">
+				<tonnes>24.821</tonnes>
+				<pieces></pieces>
+			 </item>
+		 </category>
+		 <category name="Заготовка" id="3">
+			<item name="Заготовка D 100*1600 RP">
+				<tonnes>4.120</tonnes>
+				<pieces>183.000</pieces>
+			 </item>
+			 <item name="Заготовка D 100*1600 B-12">
+				<tonnes>2.313</tonnes>
+				<pieces>105.000</pieces>
+			 </item>
+			 <item name="Заготовка D 125*1000 ЭГП">
+				<tonnes>0.133</tonnes>
+				<pieces>5.000</pieces>
+			 </item>
+			 <item name="Заготовка D 185 Китай Шида ниппельная">
+				<tonnes>3.969</tonnes>
+				<pieces>45.000</pieces>
+			 </item>
+			 <item name="Заготовка D 282 Китай Шида ниппельная">
+				<tonnes>3.705</tonnes>
+				<pieces>20.000</pieces>
+			 </item>
+			 <item name="Заготовка D 320 HP Китай Шида">
+				<tonnes>32.574</tonnes>
+				<pieces>122.000</pieces>
+			 </item>
+			 <item name="Заготовка D 425 HP Китай Шида">
+				<tonnes>20.611</tonnes>
+				<pieces>42.000</pieces>
+			 </item>
+		
+		 </category>
+		 <category name="Сыпучие" id="4">
+			<item name="Графит ГЛ-1">
+				<tonnes>36.291</tonnes>
+				<pieces></pieces>
+			 </item>
+			 <item name="Графит измельченный">
+				<tonnes>5.039</tonnes>
+				<pieces></pieces>
+			 </item>
+			 <item name="Масса электродная">
+				<tonnes>63.703</tonnes>
+				<pieces></pieces>
+			 </item>
+			 <item name="Пек">
+				<tonnes>0.300</tonnes>
+				<pieces></pieces>
+			 </item>
+		
+		 </category>
+		 <category name="Труба без МО" id="5">
+			<item name="Труба без МО">
+				<tonnes>49.198</tonnes>
+				<pieces>17.000</pieces>
+			 </item>
+		
+		 </category>
+		 <category name="Трубы угольные" id="6">
+			<item name="Трубы угольные">
+				<tonnes>1.553</tonnes>
+				<pieces>137.000</pieces>
+			 </item>
+		
+		 </category>
+</main>
